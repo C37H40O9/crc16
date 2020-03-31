@@ -4,10 +4,10 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 74b39bb096c4e03c831cb8b95ca830cacef4c062279353f8bebd5e09ee42ba74
+-- hash: 4133d7daa114a495a5b70c472c5d1ba785779ef43369aa297629afb08ce571e9
 
 name:           crc16
-version:        0.1.0.0
+version:        0.1.0
 homepage:       https://github.com/C37H40O9/crc16#readme
 bug-reports:    https://github.com/C37H40O9/crc16/issues
 author:         Joris Putcuyps
