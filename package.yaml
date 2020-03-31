@@ -1,0 +1,31 @@
+name:                crc16
+version:             0.1.0.0
+github:              "C37H40O9/crc16"
+license:             BSD3
+author:              "Joris Putcuyps"
+copyright:           "(c) 2009 Joris Putcuyps"
+
+dependencies:
+- base >= 4.7 && < 5
+- bytestring
+- HUnit
+
+library:
+  source-dirs:
+  - src
+  exposed-modules:
+  - Data.Digest.CRC16
+  ghc-options:
+  - -Wall
+  - -Wcompat
+  - -Widentities
+  - -fhide-source-paths
+
+tests:
+  crc16test:
+    main: Main.hs
+    source-dirs: test
+    dependencies:
+    - HUnit
+    - bytestring
+    - crc16

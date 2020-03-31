@@ -1,0 +1,50 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 74b39bb096c4e03c831cb8b95ca830cacef4c062279353f8bebd5e09ee42ba74
+
+name:           crc16
+version:        0.1.0.0
+homepage:       https://github.com/C37H40O9/crc16#readme
+bug-reports:    https://github.com/C37H40O9/crc16/issues
+author:         Joris Putcuyps
+maintainer:     Joris Putcuyps
+copyright:      (c) 2009 Joris Putcuyps
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/C37H40O9/crc16
+
+library
+  exposed-modules:
+      Data.Digest.CRC16
+  other-modules:
+      Paths_crc16
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -fhide-source-paths
+  build-depends:
+      HUnit
+    , base >=4.7 && <5
+    , bytestring
+  default-language: Haskell2010
+
+test-suite crc16test
+  type: exitcode-stdio-1.0
+  main-is: Main.hs
+  other-modules:
+      Paths_crc16
+  hs-source-dirs:
+      test
+  build-depends:
+      HUnit
+    , base >=4.7 && <5
+    , bytestring
+    , crc16
+  default-language: Haskell2010
